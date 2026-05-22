@@ -1,0 +1,29 @@
+/* Khoirunnisak_202432028 */
+
+body {
+    background: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+    height: 100vh;
+}
+
+.card {
+    background-color: #495057 !important;
+    color: white;
+}
+
+.nav-link:hover {
+    color: #f1c40f !important;
+}
+
+.input-group-text {
+    background-color: #e9ecef;
+    border: none;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}

@@ -1,0 +1,52 @@
+/* Khoirun Nisak_202432028 */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f7f6;
+    margin: 0;
+}
+
+header {
+    background: #669db2;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+}
+
+nav a {
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+nav a.active {
+    background: white;
+    color: #669db2;
+}
+
+main {
+    padding: 3rem;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #669db2;
+}
+
+th {
+    background-color: #669db2;
+    color: white;
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    background: white;
+}
