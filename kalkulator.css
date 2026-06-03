@@ -1,0 +1,238 @@
+/* Watermark: Khoirun Nisak-202432028 | Sistem Informasi ITPLN */
+
+/* Variabel Warna Pastel Khas Nisak */
+:root {
+    --bg-header: #ffb5a7;
+    --text-white: #ffffff;
+    --pastel-pink: #ffb5a7;
+    --pastel-yellow: #ffe066;
+    --pastel-yellow-dark: #e9c46a;
+    --pastel-mint: #d8f3dc;
+    --text-dark: #4a4343;
+    --transition-smooth: all 0.3s ease;
+}
+
+/* Helper Class untuk Sembunyikan Elemen */
+.hidden {
+    display: none !important;
+}
+
+/* Welcome Box Alert */
+.welcome-box {
+    background-color: #e8fcf6;
+    border: 1px solid #b7f3e1;
+    color: #2a7a60;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Card Kalkulator Utama */
+.calc-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 3px solid var(--pastel-pink);
+    box-shadow: 0 8px 0px var(--pastel-pink);
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.calc-header {
+    background-color: var(--bg-header);
+    color: var(--text-white);
+    padding: 25px 30px;
+}
+
+.calc-title {
+    margin: 0 0 8px 0;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+.calc-subtitle {
+    margin: 0;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* Grid Tampilan Bobot Penilaian */
+.weight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.weight-item {
+    padding: 15px 10px;
+    border-right: 1px solid #eee;
+}
+
+.weight-item:last-child {
+    border-right: none;
+}
+
+.weight-item span {
+    display: block;
+    font-size: 11px;
+    color: #a09595;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.weight-item strong {
+    font-size: 18px;
+    color: #2d6a4f;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Form Styling */
+.calc-form {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #f0e6e6;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: var(--transition-smooth);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--pastel-pink);
+    background-color: #fff8f7;
+}
+
+/* Error Box Banner */
+.error-box {
+    background-color: #ffe3e3;
+    border: 2px solid #ffb3b3;
+    color: #bd3a3a;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Tombol Hitung Pastel Kuning Menawan */
+.btn-hitung {
+    width: 100%;
+    background-color: var(--pastel-yellow);
+    border: 2px solid var(--pastel-yellow-dark);
+    box-shadow: 0 4px 0px var(--pastel-yellow-dark);
+    color: var(--text-dark);
+    padding: 12px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.btn-hitung:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0px var(--pastel-yellow-dark);
+}
+
+.btn-hitung:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0px var(--pastel-yellow-dark);
+}
+
+/* Box Wadah Hasil Akhir */
+.hasil-box {
+    margin: 10px 30px 30px 30px;
+    padding: 20px;
+    background-color: #fff0f3;
+    border: 3px dashed var(--pastel-pink);
+    border-radius: 15px;
+    text-align: center;
+    animation: bounceIn 0.5s ease;
+}
+
+.hasil-title {
+    margin: 0 0 15px 0;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+    color: var(--text-dark);
+}
+
+.hasil-content p {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.hasil-content strong {
+    color: #e67e22;
+    font-size: 18px;
+}
+
+/* Desain Badge Grade Berwarna Dinamis per Class sesuai Modul */
+.grade-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.grade-badge {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 4px 20px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+}
+
+/* CSS Khusus Pembeda Latar Belakang Tiap Grade */
+.grade-A { background-color: #d8f3dc !important; border-color: #52b788 !important; color: #1b4332 !important; }
+.grade-B { background-color: #e8f1f5 !important; border-color: #3a86c8 !important; color: #1d3557 !important; }
+.grade-C { background-color: #fff3b0 !important; border-color: #e9c46a !important; color: #745203 !important; }
+.grade-D { background-color: #ffe3e3 !important; border-color: #ffb3b3 !important; color: #bd3a3a !important; }
+.grade-E { background-color: #4a4a4a !important; border-color: #1a1a1a !important; color: #ffffff !important; }
+
+/* Media Query Responsif HP Layar Kecil (Ketentuan Modul) */
+@media (max-width: 500px) {
+    .container { padding: 15px 10px; }
+    .calc-header { padding: 15px 20px; }
+    .calc-form { padding: 20px; }
+    .weight-item strong { font-size: 15px; }
+}
+
+/* Efek Animasi Muncul */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes bounceIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); opacity: 1; }
+}
